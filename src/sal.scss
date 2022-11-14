@@ -172,3 +172,25 @@ body.sal-disabled [data-sal|='zoom'] {
 body.sal-disabled [data-sal|='flip'] {
   transform: none;
 }
+
+.sal-disabled [data-sal] { 
+  -webkit-transition: none !important; 
+  -moz-transition: none !important; 
+  -o-transition: none !important; 
+  -ms-transition: none !important; 
+  transition: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+@media(max-width: 768px) {
+  [data-sal-mobile-disabled='true'] {
+    -webkit-transition: none !important; 
+    -moz-transition: none !important; 
+    -o-transition: none !important; 
+    -ms-transition: none !important; 
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
